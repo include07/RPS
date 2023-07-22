@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Testing</h1>
+    <div class="main">
+        <div class="instructions">
+            <h1>Hello human, u will be playing against the computer for a game of 
+            rock-papers-scissors, first to 3 is the winner, click on the
+            your choice in the left handside when the game starts, goodluck!
+            </h1>
+        </div>
+        <div class="container">
+            <div class="humanSide">
+                <button id="paperButton"><img src="human/leftpaper.png" alt="paper" width="200" height="200"></button>
+                <button id="rockButton"><img src="human/leftrock.png" alt="rock" width="200" height="200"></button>
+                <button id="scissorsButton"><img src="human/leftscissors.png" alt="scissors" width="200" height="200"></button>
+            </div>
+            <div class="arena">
+                <div class="score"><h1 id="scoreTag">score</h1></div>
+                <div class="message"><h2 id="messageTag">Comments</h2></div>
+            </div>
+            <div class="robotSide">
+                <img id="paperRobot" src="robot/rightpaper.png" alt="paper" width="200" height="200">
+                <img id="rockRobot" src="robot/rightrock.png" alt="rock" width="200" height="200">
+                <img id="scissorsRobot" src="robot/rightscissors.png" alt="scissors" width="200" height="200">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
